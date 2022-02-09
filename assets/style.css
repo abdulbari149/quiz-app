@@ -1,0 +1,92 @@
+@font-face {
+  font-family: quiz;
+  src: url(fonts/fa-solid-900.woff2);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-height: 100vh;
+    height: 100vh;
+    font-family: quiz, Arial;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+#header{
+    padding: 20px;
+    background-color: #218380;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+
+#header #timer{
+    width: 80px;
+}
+main {
+    place-self: center;
+}
+
+.container{
+    background: white;
+    border: .025em solid #808080;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 1px rgba(145, 145, 145, 0.329),
+                3px -1px 8px 3px rgba(0,0,0,.1);
+    margin: .5% 0;    
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+.wrapper p {
+    font-size: 15px;
+}
+.btn{
+    padding: 10px 12px;
+    color :white;
+    font-weight: 600;
+    background-color: #218380;
+    border: none;
+    border-radius: .25em;
+    box-shadow: 2px 2px 3px #30a19e4b;
+}
+#high-scores{
+    padding-left: 30px;
+}
+.flex {
+    display:flex;
+    gap: 1em;
+}
+.flex-c{
+    flex-direction:column;
+}
+.full-width{
+    width: 100%;
+    max-width: 100%;
+}
+
+.line{
+    width: 100%;
+    border-top: 2px solid rgba(0,0,0,.2);
+}
+#status{
+    font-size: 20px;
+    letter-spacing: .7px;
+}
+
+#initials{
+    width: 120px;
+    height: 30px;
+    padding: 0px 7px;
+}
